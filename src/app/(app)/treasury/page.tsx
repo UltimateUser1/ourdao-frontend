@@ -313,7 +313,7 @@ export default function TreasuryPage() {
               />
               {token.isError && (
                 <p role="alert" className="text-xs text-amber-600 dark:text-amber-400 mt-1">
-                  Balance unavailable.{' '}
+                  <span>Balance unavailable.</span>{' '}
                   <button type="button" className="underline" onClick={() => token.refetch()}>
                     Retry
                   </button>
